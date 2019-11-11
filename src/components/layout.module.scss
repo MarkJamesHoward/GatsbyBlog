@@ -1,0 +1,12 @@
+.container {
+  align-items: center;
+  max-width: 750px;
+  padding: 1 rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}

@@ -1,0 +1,21 @@
+.link {
+  color: grey;
+}
+
+.header {
+  padding: 1rem 0 1rem;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list > li {
+  margin-left: 1rem;
+}
+
+.nav-item:hover {
+  color: darken(grey, 100%);
+}

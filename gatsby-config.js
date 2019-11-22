@@ -14,6 +14,13 @@ module.exports = {
   },
   /* Your site config here */
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: "ca-pub-6571414832573314",
+        head: true, // Optional
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,

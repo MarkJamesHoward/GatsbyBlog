@@ -4,18 +4,20 @@ import Styles from "./header.module.scss"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
-  query {
-    site {
-      siteMetadata {
-        title
+    query {
+      site {
+        siteMetadata {
+          title
+        }
       }
     }
-  }
   `)
   return (
     <div>
       <h1>
-        <Link className={Styles.header} to="/">{data.site.siteMetadata.title}</Link>
+        <Link className={Styles.header} to="/">
+          {data.site.siteMetadata.title}
+        </Link>
       </h1>
       <nav className={Styles.header}>
         <ul className={Styles.navList}>
@@ -32,6 +34,11 @@ const Header = () => {
           <li className={Styles.navItem}>
             <Link className={Styles.link} to="/contact">
               Contact
+            </Link>
+          </li>
+          <li className={Styles.navItem}>
+            <Link className={Styles.link} to="/website">
+              Websites
             </Link>
           </li>
           <li className={Styles.navItem}>

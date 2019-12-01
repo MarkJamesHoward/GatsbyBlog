@@ -13,13 +13,9 @@ const Header = () => {
     }
   `)
   return (
-    <div>
-      <h1>
-        <Link className={Styles.header} to="/">
-          {data.site.siteMetadata.title}
-        </Link>
-      </h1>
-      <nav className={Styles.header}>
+    <div className={Styles.header}>
+      <h1>{data.site.siteMetadata.title}</h1>
+      <nav>
         <ul className={Styles.navList}>
           <li className={Styles.navItem}>
             <Link className={Styles.link} to="/">

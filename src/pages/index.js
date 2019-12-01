@@ -5,6 +5,7 @@ import { Link, useStaticQuery } from "gatsby"
 import styles from "./index.module.scss"
 import blogStyles from "./blog.module.scss"
 
+
 const IndexPage = () => {
   const blogData = useStaticQuery(graphql`
     query {
@@ -23,7 +24,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head title="Home" />
-    
+
       <h1>Recent Blogs</h1>
       <ol className={blogStyles.posts}>
         {blogData.allContentfulBlogPost.edges.map(edge => {

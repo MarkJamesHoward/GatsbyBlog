@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "LittleHeroes CreditCardWizard"
+    "SmudgeTheBegle AShotOfCode";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr,3);
+}
+
+.LittleHeroes, .CreditCardWizard, .AShotOfCode {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+
+.LittleHeroes {
+  grid-area: LittleHeroes;
+}
+
+.LittleHeroes:hover {
+  background: gray;
+  border: 2px solid black;
+}
+
+.CreditCardWizard {
+  grid-area: CreditCardWizard;
+}
+
+.CreditCardWizard:hover {
+  background: gray;
+  border: 2px solid black;
+}
+
+.AShotOfCode {
+  grid-area: AShotOfCode;
+}
+
+.AShotOfCode:hover {
+  background: gray;
+  border: 2px solid black;
+}
+
+
+.links {
+  text-decoration: none;
+}
+
+

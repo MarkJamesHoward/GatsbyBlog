@@ -5,3 +5,44 @@
 .links {
   text-decoration: none;
 }
+
+.container {
+  display: grid;
+  grid-template-areas: "websites blogs"
+                      "other1 other2";
+}
+
+.blogs:hover, .websites:hover, .other1:hover, .other2:hover {
+  background: gray;
+  cursor: pointer;
+}
+
+.blogs, .websites, .other1, .other2 {
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  border-radius: 5%;
+}
+
+.other1 {
+  grid-area: other1;
+}
+
+.other2{
+  grid-area: other2;
+}
+
+
+.blogs {
+  grid-area: blogs;
+}
+
+.websites {
+  grid-area: websites;
+}
+
+

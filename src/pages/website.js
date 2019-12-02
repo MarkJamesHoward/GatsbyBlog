@@ -3,8 +3,10 @@ import Layout from "../components/layout.js"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Head from "../components/head"
 import styles from "./website.module.scss"
+import LittleHeroesImg from '../../static/littleheroes.png'
+import Website from '../components/website'
 
-const BlogPage = () => {
+const WebsitePage = () => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
@@ -22,44 +24,9 @@ const BlogPage = () => {
     <Layout>
       <Head title="Websites" />
       <h1>Websites</h1>
-      <ul className={styles.websites}>
-        <li>
-          <h3>An application for rewarding kids on good behaviour</h3>
-          <p>
-            <a className={styles.links} href="https://littleheroes.online">LittleHeroes</a>
-          </p>
-        </li>
-        <li>
-          <h3>
-            Comparison of credit cards in New Zealand
-          </h3>
-          <p>
-            <a className={styles.links}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.creditcardwizard.co.nz"
-            >
-              Credit card wizard
-            </a>
-          </p>
-        </li>
-        <li>
-          <h3>
-            YouTube channel - Tutorials on web development
-          </h3>
-          <p>
-            <a className={styles.links}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.youtube.com/channel/UC0HsZmiuGCRpKUHR_owGuxA"
-            >
-              A shot of code Youtube channel
-            </a>
-          </p>
-        </li>
-      </ul>
+      <Website/>
     </Layout>
   )
 }
 
-export default BlogPage
+export default WebsitePage

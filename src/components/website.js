@@ -22,7 +22,7 @@ const Website = () => {
     <div className={styles.container}>
       <div className={styles.LittleHeroes}>
         <h3>An application for rewarding kids on good behaviour</h3>
-        <img src={LittleHeroesImg} width="200px" alt="" />
+        <img width="200px" alt="" />
         <a
           target="_blank"
           rel="noopener noreferrer"

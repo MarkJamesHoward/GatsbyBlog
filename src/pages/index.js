@@ -3,8 +3,7 @@ import Layout from "../components/layout.js"
 import Head from "../components/head"
 import { Link, useStaticQuery } from "gatsby"
 import styles from "./index.module.scss"
-import blogStyles from "./blog.module.scss"
-import Website from "../components/website"
+import Card from "../components/card"
 
 const IndexPage = () => {
   const blogData = useStaticQuery(graphql`
@@ -27,13 +26,17 @@ const IndexPage = () => {
 
       <div className={styles.container}>
         <div className={styles.websites}>
-          <Link to="./website">Websites</Link>
+          <Card title="Websites" image="websites.png" t></Card>
         </div>
         <div className={styles.blogs}>
-          <Link to="./blog">Blog</Link>
+          <Card title="Blogs" image="Blogs.png"></Card>
         </div>
-        <div className={styles.other1}>Other</div>
-        <div className={styles.other2}>Other</div>
+        <div className={styles.other1}>
+          <Card title="YouTube Channel" image="YouTube.png"></Card>
+        </div>
+        <div className={styles.other2}>
+          <Card title="Other">Other</Card>
+        </div>
       </div>
     </Layout>
   )

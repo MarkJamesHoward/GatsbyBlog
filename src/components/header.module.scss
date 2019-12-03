@@ -3,17 +3,23 @@
   text-decoration: none;
 }
 
+.link:hover {
+  background: gray;
+}
+
 .header {
   text-decoration: none;
   background: orange;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-list {
-  background: orange;
   display: flex;
-  justify-content: center;
   list-style-type: none;
+}
+.nav {
+  flex-grow:0;
 }
 
 .nav-list > li {
@@ -21,6 +27,3 @@
 }
 
 
-.nav-item:hover {
-  color: darken(grey, 100%);
-}

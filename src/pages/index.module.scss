@@ -13,7 +13,6 @@
 }
 
 .blogs:hover, .websites:hover, .other1:hover, .other2:hover {
-  background: gray;
   cursor: pointer;
 }
 
@@ -22,8 +21,6 @@
   margin: 1rem;
   justify-content: center;
   align-items: center;
-  width: 30vw;
-  height: 30vw;
   display: flex;
   border-radius: 5%;
 }

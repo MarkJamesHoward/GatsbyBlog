@@ -1,0 +1,26 @@
+.card {
+  border-radius: 2%;
+  background: rgb(250, 247, 247);
+  box-shadow: 2px 3px #eeeeee;
+  width: 30vw;
+  height: 40vh;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+
+.card:hover {
+  border: 1px solid red;
+}
+
+.title {
+  user-select: none;
+}
+
+
+.image {
+  width: 50%;
+}

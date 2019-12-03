@@ -9,7 +9,7 @@ dotenv.config()
 
 module.exports = {
   siteMetadata: {
-    title: "A shot of Code",
+    title: "Mark James Howard",
     author: "Mark Howard",
   },
   /* Your site config here */

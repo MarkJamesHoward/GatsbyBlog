@@ -14,7 +14,10 @@ const Header = () => {
   `)
   return (
     <div className={Styles.header}>
-      <h1 className={Styles.title}>{data.site.siteMetadata.title}</h1>
+      <Link className={Styles.title} to="/">
+        <h1>{data.site.siteMetadata.title}</h1>
+      </Link>
+
       <nav className={Styles.nav}>
         <ul className={Styles.navList}>
           {/* <li className={Styles.navItem}>
@@ -27,7 +30,7 @@ const Header = () => {
               About
             </Link>
           </li> */}
-          
+
           <li className={Styles.navItem}>
             <Link className={Styles.link} to="/website">
               Websites

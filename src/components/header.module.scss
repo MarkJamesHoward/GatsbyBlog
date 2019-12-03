@@ -3,6 +3,10 @@
   text-decoration: none;
 }
 
+.title {
+  margin-left: 1rem;
+}
+
 .link:hover {
   background: gray;
 }
@@ -20,6 +24,7 @@
 }
 .nav {
   flex-grow:0;
+  margin-right: 2rem;
 }
 
 .nav-list > li {

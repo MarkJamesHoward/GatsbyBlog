@@ -3,7 +3,6 @@ import Layout from "../components/layout.js"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Head from "../components/head"
 import styles from "./website.module.scss"
-import LittleHeroesImg from '../../static/littleheroes.png'
 import Website from '../components/website'
 
 const WebsitePage = () => {

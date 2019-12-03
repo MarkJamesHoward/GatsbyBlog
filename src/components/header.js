@@ -14,7 +14,7 @@ const Header = () => {
   `)
   return (
     <div className={Styles.header}>
-      <h1>{data.site.siteMetadata.title}</h1>
+      <h1 className={Styles.title}>{data.site.siteMetadata.title}</h1>
       <nav className={Styles.nav}>
         <ul className={Styles.navList}>
           {/* <li className={Styles.navItem}>

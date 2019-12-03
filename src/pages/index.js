@@ -4,6 +4,7 @@ import Head from "../components/head"
 import { Link, useStaticQuery } from "gatsby"
 import styles from "./index.module.scss"
 import Card from "../components/card"
+import "../styles/index.scss"
 
 const IndexPage = () => {
   const blogData = useStaticQuery(graphql`

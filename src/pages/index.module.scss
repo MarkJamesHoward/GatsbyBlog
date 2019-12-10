@@ -9,28 +9,30 @@
 .container {
   display: grid;
   grid-template-areas: "websites blogs"
-                      "other1 other2";
+                      "other1 youtube";
 }
 
-.blogs:hover, .websites:hover, .other1:hover, .other2:hover {
+.blogs:hover, .websites:hover, .other1:hover, .youtube:hover {
   cursor: pointer;
 }
 
-.blogs, .websites, .other1, .other2 {
+
+.blogs, .websites, .other1, .youtube {
   padding: 1rem;
   margin: 1rem;
   justify-content: center;
   align-items: center;
   display: flex;
   border-radius: 5%;
+  text-decoration: none;
 }
 
 .other1 {
   grid-area: other1;
 }
 
-.other2{
-  grid-area: other2;
+.youtube{
+  grid-area: youtube;
 }
 
 

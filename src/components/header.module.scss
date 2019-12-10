@@ -6,6 +6,10 @@
   color: black;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .title:hover {
   background: darken(orange, 5%);
   cursor: pointer;

@@ -26,18 +26,18 @@ const IndexPage = () => {
       <Head title="Home" />
 
       <div className={styles.container}>
-        <div className={styles.websites}>
+        <Link className={styles.websites} to="/website">
           <Card title="Websites" image="websites.png" t></Card>
-        </div>
-        <div className={styles.blogs}>
+        </Link>
+        <Link className={styles.blogs} to="/blog">
           <Card title="Blogs" image="Blogs.png"></Card>
-        </div>
-        <div className={styles.other1}>
-          <Card title="YouTube Channel" image="YouTube.png"></Card>
-        </div>
-        <div className={styles.other2}>
+        </Link>
+        <Link className={styles.youtube} to="/youtube">
+          <Card title="a shot of code" image="YouTube.png"></Card>
+        </Link>
+        <Link className={styles.other1} to="/other">
           <Card title="Other">Other</Card>
-        </div>
+        </Link>
       </div>
     </Layout>
   )

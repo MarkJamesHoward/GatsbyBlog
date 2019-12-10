@@ -8,16 +8,32 @@
 
 .container {
   display: grid;
-  grid-template-areas: "websites blogs"
-                      "other1 youtube";
+  grid-template-areas:
+    "websites blogs"
+    "smudge shotofcode";
 }
 
-.blogs:hover, .websites:hover, .other1:hover, .youtube:hover {
+@media (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      "websites"
+      "blogs"
+      "smudge"
+      "shotofcode";
+  }
+}
+
+.blogs:hover,
+.websites:hover,
+.smudge:hover,
+.youtube:hover {
   cursor: pointer;
 }
 
-
-.blogs, .websites, .other1, .youtube {
+.blogs,
+.websites,
+.smudge,
+.youtube {
   padding: 1rem;
   margin: 1rem;
   justify-content: center;
@@ -25,16 +41,16 @@
   display: flex;
   border-radius: 5%;
   text-decoration: none;
+  color: black;
 }
 
-.other1 {
-  grid-area: other1;
+.smudge {
+  grid-area: smudge;
 }
 
-.youtube{
-  grid-area: youtube;
+.youtube {
+  grid-area: shotofcode;
 }
-
 
 .blogs {
   grid-area: blogs;
@@ -43,5 +59,3 @@
 .websites {
   grid-area: websites;
 }
-
-

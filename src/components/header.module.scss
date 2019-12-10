@@ -1,6 +1,5 @@
-
 .title {
-  padding-left:  1rem;
+  padding-left: 1rem;
   padding-right: 1rem;
   text-decoration: none;
   color: black;
@@ -26,13 +25,18 @@
   display: flex;
   list-style-type: none;
 }
+
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+  }
+}
+
 .nav {
-  flex-grow:0;
+  flex-grow: 0;
   margin-right: 2rem;
 }
 
 .nav-list > li {
   margin-left: 1rem;
 }
-
-

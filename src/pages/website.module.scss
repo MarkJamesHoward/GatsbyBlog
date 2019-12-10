@@ -1,9 +1,60 @@
-.websites {
-  list-style-type: none;
+.container {
+  display: grid;
+  grid-template-areas:
+    "LittleHeroes CreditCardWizard"
+    "SmudgeTheBeagle Other";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr,3);
 }
 
+.LittleHeroes, .CreditCardWizard, .Other, .SmudgeTheBeagle{
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  background: rgb(253, 252, 252);
+  border: 1px solid #EEEEEE;
+  user-select: none;
+}
 
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "LittleHeroes"
+      "CreditCardWizard"
+      "SmudgeTheBeagle"
+      "Other";
+  }
+  .LittleHeroes, .CreditCardWizard, .Other, .SmudgeTheBeagle{
+    width: 90vw;
+  }
+}
+
+.LittleHeroes:hover, .CreditCardWizard:hover, .Other:hover, .SmudgeTheBeagle:hover  {
+  border: 1px solid black;
+}
+
+.SmudgeTheBeagle {
+  grid-area: SmudgeTheBeagle
+}
+
+.LittleHeroes {
+  grid-area: LittleHeroes;
+}
+
+.CreditCardWizard {
+  grid-area: CreditCardWizard;
+}
+
+.Other {
+  grid-area: Other;
+}
 
 .links {
   text-decoration: none;
 }
+
+

@@ -2,48 +2,43 @@
   display: grid;
   grid-template-areas:
     "LittleHeroes CreditCardWizard"
-    "SmudgeTheBegle AShotOfCode";
+    "SmudgeTheBeagle Other";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1fr,3);
 }
 
-.LittleHeroes, .CreditCardWizard, .AShotOfCode {
+.LittleHeroes, .CreditCardWizard, .Other, .SmudgeTheBeagle{
   display: flex;
   flex-direction: column;
   border-radius: 3%;
   padding: 1rem;
   margin: 1rem;
   cursor: pointer;
+  background: rgb(253, 252, 252);
+  border: 1px solid #EEEEEE;
+  user-select: none;
+ 
 }
 
+.LittleHeroes:hover, .CreditCardWizard:hover, .Other:hover, .SmudgeTheBeagle:hover  {
+  border: 1px solid black;
+}
+
+.SmudgeTheBeagle {
+  grid-area: SmudgeTheBeagle
+}
 
 .LittleHeroes {
   grid-area: LittleHeroes;
-}
-
-.LittleHeroes:hover {
-  background: gray;
-  border: 2px solid black;
 }
 
 .CreditCardWizard {
   grid-area: CreditCardWizard;
 }
 
-.CreditCardWizard:hover {
-  background: gray;
-  border: 2px solid black;
+.Other {
+  grid-area: Other;
 }
-
-.AShotOfCode {
-  grid-area: AShotOfCode;
-}
-
-.AShotOfCode:hover {
-  background: gray;
-  border: 2px solid black;
-}
-
 
 .links {
   text-decoration: none;

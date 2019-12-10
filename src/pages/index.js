@@ -32,12 +32,28 @@ const IndexPage = () => {
         <Link className={styles.blogs} to="/blog">
           <Card title="Blogs" image="Blogs.png"></Card>
         </Link>
-        <Link className={styles.youtube} to="/youtube">
-          <Card title="a shot of code" image="YouTube.png"></Card>
-        </Link>
-        <Link className={styles.other1} to="/other">
-          <Card title="Other">Other</Card>
-        </Link>
+        <a
+          className={styles.youtube}
+          target="_blank"
+          href="https://www.youtube.com/channel/UC0HsZmiuGCRpKUHR_owGuxA"
+        >
+          <Card
+            title="A Shot of Code"
+            footer="YouTube"
+            image="YouTube.png"
+          ></Card>
+        </a>
+        <a
+          target="_blank"
+          className={styles.smudge}
+          href="https://www.youtube.com/channel/UCaXo-V4saqKWjgkt4vIU9SA"
+        >
+          <Card
+            image="YouTube.png"
+            title="Smudge the Beagle"
+            footer="YouTube"
+          ></Card>
+        </a>
       </div>
     </Layout>
   )

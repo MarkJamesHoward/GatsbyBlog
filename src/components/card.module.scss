@@ -10,16 +10,23 @@
   align-items: center;
   justify-content: space-around;
   font-size: 2rem;
+  border: 1px solid #fefefe;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 70vw;
+  }
 }
 
 .card:hover {
-  border: 1px solid red;
+  border: 1px solid #dddddd;
 }
 
 .title {
   user-select: none;
+  text-align: center;
 }
-
 
 .image {
   width: 50%;

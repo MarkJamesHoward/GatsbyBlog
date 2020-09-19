@@ -1,6 +1,6 @@
 ---
 title: "My first Blog 2"
-date: "2019-11-11"
+date: "2019-11-12"
 ---
 
 This is my first post by the way
@@ -10,4 +10,3 @@ This is my first post by the way
 1. Gatsby
 2. React
 3. Aurelia
-
